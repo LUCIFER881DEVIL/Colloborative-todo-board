@@ -1,0 +1,214 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.dashboard-nav h2 {
+  margin: 0;
+}
+
+.dashboard-nav button {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.kanban-board {
+  flex: 3;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.activity-panel {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.task-columns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.task-column {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.task-column h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.task-card {
+  background: white;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.activity-log {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.activity-log li {
+  background: #f8f8f8;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+}
+
+.activity-log li p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.activity-log li small {
+  color: #666;
+  font-size: 0.75rem;
+}
+.add-task-btn {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+
+.add-task-btn:hover {
+  background: #d0d0d0;
+}
+
+.task-card {
+  position: relative;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.smart-assign-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.smart-assign-btn:hover {
+  background: #43a047;
+}
+.conflict-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.conflict-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.conflict-data {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.conflict-data pre {
+  background: #f0f0f0;
+  padding: 0.5rem;
+  max-height: 200px;
+  overflow: auto;
+  font-size: 0.8rem;
+}
+
+.conflict-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.conflict-buttons button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.conflict-buttons button:nth-child(1) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.conflict-buttons button:nth-child(2) {
+  background-color: #f44336;
+  color: white;
+}
+
+.conflict-buttons button:nth-child(3) {
+  background-color: gray;
+  color: white;
+}
+

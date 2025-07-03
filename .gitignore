@@ -1,0 +1,9 @@
+echo "node_modules/
+.env
+backend/node_modules/
+backend/.env
+collab-todo-client/node_modules/
+collab-todo-client/dist/
+*.log
+.DS_Store
+" > .gitignore
