@@ -6,8 +6,8 @@ A full-stack Trello-style Kanban board where multiple users can **register**, **
 
 ## 🚀 Live Demo
 
-🔗 [Frontend Deployed on Vercel](https://your-frontend.vercel.app)  
-🔗 [Backend Deployed on Render](https://your-backend.onrender.com)  
+🔗 [Frontend Deployed on Vercel](https://colloborative-todo-board-hmo8-yashs-projects-c6e03660.vercel.app/)  
+🔗 [Backend Deployed on Render](https://colloborative-todo-board.onrender.com)  
 🔗 [📹 Demo Video (YouTube/Drive)](https://your-demo-link.com)
 
 ---

@@ -121,6 +121,11 @@ const Dashboard = () => {
   const handleAddTask = (status) => {
     const title = prompt("Enter task title:");
     if (!title) return;
+    // ✅ Validation: title should not match column names
+  if (["Todo", "In Progress", "Done"].includes(title.trim())) {
+    alert("Task title cannot match column name.");
+    return;
+  }
 
     const description = prompt("Enter description:") || "";
     const assignedTo = prompt("Assign to (name):") || "Unassigned";
